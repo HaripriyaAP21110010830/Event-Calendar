@@ -1,3 +1,5 @@
+#Event Calendar App
+------------------------------------------------
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -11,17 +13,7 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-Event Calendar App
-------------------------------------
-A fully-featured, interactive calendar application built with React that allows users to:
--Add, edit, and delete events
--Assign categories and recurrence (daily, weekly, monthly)
--Filter events by title and category
--Drag and drop events between days
--Detect conflicts based on time/date
--Persist data using localStorage
-
- Features 
+ 🚀Features 
  ------------
 -Monthly calendar view
 -Event creation with date, time, description, and category
@@ -60,7 +52,7 @@ Edit
 ├── package.json
 └── README.md
 
-📌 Usage Instructions
+📌Usage Instructions
 --------------------
 Add Event:
 Click on any date cell.
@@ -91,7 +83,7 @@ Data is stored in browser localStorage. Refreshing won't delete your events.
 Events with identical date & time will raise a conflict warning.
 Designed to be responsive and mobile-friendly.
 
-Technologies Used
+🧰Technologies Used
 ------------------------
 React Components:
 App.jsx handles overall logic, state management, and renders UI.
