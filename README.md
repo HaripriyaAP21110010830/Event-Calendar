@@ -36,7 +36,7 @@ npm install
 
 Start the application:
 npm start
-The app will be available at http://localhost:3000.
+The app will be available at http://localhost:5173
 
 📂 Project Structure
 bash
