@@ -590,7 +590,8 @@ function App() {
         @media (max-width: 400px) {
           .cell {
             min-height: 50px;
-          }
+            
+          } 
           .event-item {
             font-size: 0.65rem;
           }
