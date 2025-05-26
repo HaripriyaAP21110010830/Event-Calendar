@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.calendar {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 1;
+  text-align: center;
+}
+
+.col-start {
+  text-align: left;
+}
+
+.col-end {
+  text-align: right;
+}
+
+.days {
+  display: flex;
+  background: #eee;
+  padding: 10px 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.days .col {
+  flex: 1;
+  font-weight: bold;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  min-height: 80px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  overflow-y: auto;
+}
+
+.cell.today {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+}
+
+
+.cell.disabled {
+  background: #f9f9f9;
+  color: #aaa;
+  cursor: default;
+}
+
+.cell.selected {
+  background: #cce5ff;
+  border-color: #3399ff;
+}
+
+.number {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.events {
+  max-height: 65px;
+  overflow-y: auto;
+}
+
+.event-item {
+  background: #3399ff;
+  color: white;
+  margin-bottom: 3px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: grab;
+}
+
+.event-item:active {
+  cursor: grabbing;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 6px;
+  margin: 4px 0 10px 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.cancel-btn {
+  background: #aaa;
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  border-radius: 6px;
+  box-shadow: 0 0 15px #333;
+}
+.today {
+  background-color: rgba(0, 123, 255, 0.2);
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+
